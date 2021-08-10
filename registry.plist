@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>comment</key>
+		<string></string>
+		<key>host</key>
+		<string>example.com</string>
+		<key>integration</key>
+		<dict>
+			<key>code</key>
+			<string>var obj = JSON.parse(document.getElementById("__NEXT_DATA__").innerHTML);
+var initialLesson = obj["props"]["pageProps"]["initialLesson"];
+
+var getJSON = function(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      var status = xhr.status;
+      if (status === 200) {
+        callback(null, xhr.response);
+      } else {
+        callback(status, xhr.response);
+      }
+    };
+    xhr.send();
+};
+
+var mediaURL = initialLesson["media_url"];
+
+getJSON(mediaURL, function(err, data) {
+  if (err !== null) {
+		window.downie.reportError("Failed to load mediaURL: " + err);
+  } else {
+		var download = {
+			"preview": initialLesson["thumb_url"],
+			"title": initialLesson["title"],
+			"url": data["hls_url"]
+		};
+
+		window.downie.reportDownload(download);
+		window.downie.reportDone();
+  }
+});</string>
+			<key>identifier</key>
+			<string>F15951D9-53C6-4941-8F5C-F659654E6AD0</string>
+			<key>name</key>
+			<string>EggHead.io</string>
+			<key>urlRegex</key>
+			<string>egghead\.io/lessons/.+</string>
+			<key>userAgent</key>
+			<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Safari/605.1.15</string>
+		</dict>
+		<key>name</key>
+		<string>Example</string>
+		<key>sampleLink</key>
+		<string>https://www.example.com/a/b/c/</string>
+		<key>version</key>
+		<string>1.0</string>
+	</dict>
+</array>
+</plist>
