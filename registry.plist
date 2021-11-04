@@ -19,6 +19,8 @@
 		<string>https://www.example.com/a/b/c/</string>
 		<key>version</key>
 		<string>1</string>
+		<key>supportedURLRegex</key>
+		<string>https?://([^/]+\.|)example.com/a/b/</string>
 	</dict>
 </array>
 </plist>
