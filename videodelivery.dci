@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>code</key>
+	<string>// The MPD source depends on the video ID.
+const theLocation = window.location.href;
+const downloadID = theLocation.substring(theLocation.lastIndexOf('/') + 1);
+
+const downloadURL = "https://videodelivery.net/" + downloadID + "/manifest/video.mpd?parentOrigin=https%3A%2F%2Fwatch.videodelivery.net";
+
+var download = {
+    "qualities": [
+        {
+            "url": downloadURL
+        }
+    ]
+};
+
+window.downie.reportDownload(download);
+window.downie.reportDone();
+</string>
+	<key>identifier</key>
+	<string>5E79A06B-AE67-4EDD-9F43-3329B62EAC13</string>
+	<key>isFromOnlineRegistry</key>
+	<false/>
+	<key>name</key>
+	<string>Video Delivery</string>
+	<key>urlRegex</key>
+	<string>^https?://([^/]+\.)?videodelivery\.net/(?P&lt;ID&gt;[a-f0-9]+)$</string>
+	<key>userAgent</key>
+	<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Safari/605.1.15</string>
+	<key>version</key>
+	<string>1.0.0</string>
+</dict>
+</plist>

@@ -6,7 +6,7 @@
 		<key>comment</key>
 		<string></string>
 		<key>host</key>
-		<string>example.com</string>
+		<string>egghead.io</string>
 		<key>integrationFileName</key>
 		<string>EggHead.io.dci</string>
 		<key>integrationUUID</key>
@@ -14,13 +14,33 @@
 		<key>lastUpdateDateString</key>
 		<string>2021-10-15</string>
 		<key>name</key>
+		<string>EggHead.io</string>
+		<key>sampleLink</key>
+		<string>https://egghead.io/lessons/git-only-commit-some-of-my-currently-modified-files-into-the-repository</string>
+		<key>version</key>
+		<string>1.0.0</string>
+		<key>supportedURLRegex</key>
+		<string>^https?://([^/]+\.)?egghead\.io/lessons/(?P&lt;ID&gt;[^/]+)/?$</string>
+	</dict>
+	<dict>
+		<key>comment</key>
+		<string></string>
+		<key>host</key>
+		<string>videodelivery.net</string>
+		<key>integrationFileName</key>
+		<string>videodelivery.dci</string>
+		<key>integrationUUID</key>
+		<string>5E79A06B-AE67-4EDD-9F43-3329B62EAC13</string>
+		<key>lastUpdateDateString</key>
+		<string>2021-11-16</string>
+		<key>name</key>
 		<string>Example</string>
 		<key>sampleLink</key>
-		<string>https://www.example.com/a/b/c/</string>
+		<string>https://watch.videodelivery.net/16ff89fae3e33ed57e617bab87e1a7d9</string>
 		<key>version</key>
-		<string>1</string>
+		<string>1.0.0</string>
 		<key>supportedURLRegex</key>
-		<string>https?://([^/]+\.|)example.com/a/b/</string>
+		<string>^https?://([^/]+\.)?videodelivery\.net/(?P&lt;ID&gt;[a-f0-9]+)$</string>
 	</dict>
 </array>
 </plist>
