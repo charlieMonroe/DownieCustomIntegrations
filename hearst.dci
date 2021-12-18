@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>code</key>
+	<string>var obj = JSON.parse(document.getElementById("embedded-config").innerHTML)["nowcast"];
+const streamURL = obj["stream_url"];
+
+if (!streamURL) {
+	window.downie.log(obj);
+	window.downie.reportError("Failed to find stream URL.");
+} else {
+	var metas = document.getElementsByTagName('meta');
+	var download = {
+		"qualities": [{
+            "url": streamURL
+        }],
+		"title": document.title,
+		"preview": metas.namedItem('twitter:image').content
+	};
+
+	window.downie.reportDownload(download);
+	window.downie.reportDone();
+}</string>
+	<key>identifier</key>
+	<string>C5534FDE-4F1B-4E9D-BB96-EFD0414ED674</string>
+	<key>isFromOnlineRegistry</key>
+	<false/>
+	<key>name</key>
+	<string>Hearst Television</string>
+	<key>urlRegex</key>
+	<string>^https?://([^/]+\.)?(kmbc|wesh|wcvb)\.com/article/[^/]+/(?P&lt;ID&gt;\d+)/?(\?.*)?$</string>
+	<key>userAgent</key>
+	<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Safari/605.1.15</string>
+	<key>version</key>
+	<string>1.0.0</string>
+</dict>
+</plist>

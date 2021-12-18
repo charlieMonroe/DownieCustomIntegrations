@@ -17,10 +17,10 @@
 		<string>EggHead.io</string>
 		<key>sampleLink</key>
 		<string>https://egghead.io/lessons/git-only-commit-some-of-my-currently-modified-files-into-the-repository</string>
-		<key>version</key>
-		<string>1.0.0</string>
 		<key>supportedURLRegex</key>
 		<string>^https?://([^/]+\.)?egghead\.io/lessons/(?P&lt;ID&gt;[^/]+)/?$</string>
+		<key>version</key>
+		<string>1.0.0</string>
 	</dict>
 	<dict>
 		<key>comment</key>
@@ -34,13 +34,33 @@
 		<key>lastUpdateDateString</key>
 		<string>2021-11-16</string>
 		<key>name</key>
-		<string>Example</string>
+		<string>Videodelivery.net</string>
 		<key>sampleLink</key>
 		<string>https://watch.videodelivery.net/16ff89fae3e33ed57e617bab87e1a7d9</string>
-		<key>version</key>
-		<string>1.0.0</string>
 		<key>supportedURLRegex</key>
 		<string>^https?://([^/]+\.)?videodelivery\.net/(?P&lt;ID&gt;[a-f0-9]+)$</string>
+		<key>version</key>
+		<string>1.0.0</string>
+	</dict>
+	<dict>
+		<key>comment</key>
+		<string></string>
+		<key>host</key>
+		<string>kmbc.com</string>
+		<key>integrationFileName</key>
+		<string>hearst.dci</string>
+		<key>integrationUUID</key>
+		<string>C5534FDE-4F1B-4E9D-BB96-EFD0414ED674</string>
+		<key>lastUpdateDateString</key>
+		<string>2021-12-18</string>
+		<key>name</key>
+		<string>Hearst Television</string>
+		<key>sampleLink</key>
+		<string>https://www.kmbc.com/article/tornado-slammed-parts-of-kentucky-recovery/38514862</string>
+		<key>supportedURLRegex</key>
+		<string>^https?://([^/]+\.)?(kmbc|wesh|wcvb)\.com/article/[^/]+/(?P&lt;ID&gt;\d+)/?(\?.*)?$</string>
+		<key>version</key>
+		<string>1.0.0</string>
 	</dict>
 </array>
 </plist>
