@@ -62,5 +62,25 @@
 		<key>version</key>
 		<string>1.0.0</string>
 	</dict>
+	<dict>
+		<key>comment</key>
+		<string></string>
+		<key>host</key>
+		<string>inventors.com</string>
+		<key>integrationFileName</key>
+		<string>inventors.com.dci</string>
+		<key>integrationUUID</key>
+		<string>4992D45B-A246-431E-88F1-00B035536387</string>
+		<key>lastUpdateDateString</key>
+		<string>2023-09-25</string>
+		<key>name</key>
+		<string>Inventors</string>
+		<key>sampleLink</key>
+		<string>https://www.investors.com/ibd-videos/videos/trade-like-a-champion-featuring-mark-minervini</string>
+		<key>supportedURLRegex</key>
+		<string>https://www\.investors\.com/ibd-videos/videos/.+</string>
+		<key>version</key>
+		<string>1.0.0</string>
+	</dict>
 </array>
 </plist>
