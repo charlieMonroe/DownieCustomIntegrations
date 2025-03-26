@@ -3,17 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>code</key>
-	<string>var json = JSON.parse(document.querySelector('script[type="application/ld+json"]').text);
+	<string>for (var ele of document.querySelectorAll('script[type="application/ld+json"]')) {
+	var json = JSON.parse(ele.text);
+	if (json.contentUrl == null) continue;
 
-var download = {
-	"url": json.contentUrl,
-	"title": json.name.replace(' - Video - IBD', ''),
-	"preview": json.thumbnailUrl
-};
+	var download = {
+		"url": json.contentUrl,
+		"title": json.name.replace(' - Video - IBD', ''),
+		"preview": json.thumbnailUrl
+	};
+	window.downie.reportDownload(download);
+	break;
+}
 
-window.downie.reportDownload(download);
 window.downie.reportDone();
 </string>
+	<key>executionType</key>
+	<string>javaScript</string>
 	<key>identifier</key>
 	<string>4992D45B-A246-431E-88F1-00B035536387</string>
 	<key>isFromOnlineRegistry</key>
@@ -21,12 +27,18 @@ window.downie.reportDone();
 	<key>name</key>
 	<string>IBD Videos</string>
 	<key>postLoadDelay</key>
-	<integer>0</integer>
+	<integer>2</integer>
+	<key>resourceDetectionMatch</key>
+	<string></string>
+	<key>resourceDetectionMatching</key>
+	<string>literal</string>
+	<key>resourceDetectionScope</key>
+	<string>fullURL</string>
 	<key>urlRegex</key>
 	<string>https://www\.investors\.com/ibd-videos/videos/.+</string>
 	<key>userAgent</key>
 	<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15</string>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.0.1</string>
 </dict>
 </plist>
