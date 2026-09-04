@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>code</key>
+	<string></string>
+	<key>executionType</key>
+	<string>resourceDetection</string>
+	<key>identifier</key>
+	<string>B7CF62FA-E8EF-43AE-861A-A044F98E6E5B</string>
+	<key>isFromOnlineRegistry</key>
+	<false/>
+	<key>name</key>
+	<string>Stage+</string>
+	<key>postLoadDelay</key>
+	<integer>0</integer>
+	<key>resourceDetectionMatch</key>
+	<string>playlist.m3u8</string>
+	<key>resourceDetectionMatching</key>
+	<string>literal</string>
+	<key>resourceDetectionScope</key>
+	<string>lastPathComponent</string>
+	<key>urlRegex</key>
+	<string>^https://[^/]+\.stage-plus.com/video/vod_concert/*</string>
+	<key>userAgent</key>
+	<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15</string>
+	<key>version</key>
+	<string>1.0.0</string>
+</dict>
+</plist>

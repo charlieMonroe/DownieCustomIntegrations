@@ -82,5 +82,25 @@
 		<key>version</key>
 		<string>1.0.1</string>
 	</dict>
+	<dict>
+		<key>comment</key>
+		<string></string>
+		<key>host</key>
+		<string>stage-plus.com</string>
+		<key>integrationFileName</key>
+		<string>stage-plus.dci</string>
+		<key>integrationUUID</key>
+		<string>B7CF62FA-E8EF-43AE-861A-A044F98E6E5B</string>
+		<key>lastUpdateDateString</key>
+		<string>2026-09-04</string>
+		<key>name</key>
+		<string>Stage+</string>
+		<key>sampleLink</key>
+		<string>https://www.stage-plus.com/video/vod_concert_APNM8GRFDPHMASJKBSOJ0E1L</string>
+		<key>supportedURLRegex</key>
+		<string>https://[^/]+\.stage-plus.com/video/vod_concert/*</string>
+		<key>version</key>
+		<string>1.0.0</string>
+	</dict>
 </array>
 </plist>
